@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    
+}
+.ejercicios{
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    text-decoration: none;
+}
