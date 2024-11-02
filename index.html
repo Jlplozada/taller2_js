@@ -11,12 +11,11 @@
         <div class="item1">
             <a href="">
                 <h2>EJERCICIO 1</h2>
-                <p>Escriba una función imprimirNumeros(desde, hasta) que genere un número cada segundo, comenzando desde desde y terminando con hasta.
-                    Haz dos variantes de la solución describiendo el paso a paso de cada una de ellas:</p>
-                    <ul>
-                        <li>-Usando setInterval.</li>
-                        <li>-Usando setTimeout anidado.</li>
-                    </ul>
+                <p>Escriba una función imprimirNumeros(desde, hasta) que genere un número cada segundo, comenzando desde desde y terminando con hasta.Haz dos variantes de la solución describiendo el paso a paso de cada una de ellas:</p>
+                <ul>
+                    <li>Usando setInterval.</li>
+                    <li>Usando setTimeout anidado.</li>
+                </ul>
             </a>
         </div>
         <div class="item2">
@@ -26,9 +25,9 @@
                     ¿Cuándo se ejecutará la función programada y por qué se ejecutará?
                 </p>
                 <ul>
-                    <li> A. Después del bucle.</li>
-                    <li> B. Antes del bucle</li>
-                    <li> C. Al comienzo del bucle </li>
+                    <li>Después del bucle.</li>
+                    <li>Antes del bucle</li>
+                    <li>Al comienzo del bucle </li>
                 </ul>
             </a>
         </div>
@@ -37,10 +36,10 @@
                 <h2>EJERCICIO 3</h2>
                 <p>Crear una función map que acepte un array y un callback y que: </p>
                 <ul>
-                    <li>•por cada elemento del array ejecute el callback pasándole dicho elemento como argumento</li>
-                    <li>•obtenga el resultado</li>
-                    <li>•lo pushee a un nuevo array</li>
-                    <li>•devuelva el array final con el resultado de cada una de las llamadas al callback.</li>
+                    <li>por cada elemento del array ejecute el callback pasándole dicho elemento como argumento</li>
+                    <li>obtenga el resultado</li>
+                    <li>lo pushee a un nuevo array</li>
+                    <li>devuelva el array final con el resultado de cada una de las llamadas al callback.</li>
                 </ul>                    
             </a>
         </div>
@@ -49,9 +48,9 @@
                 <h2>EJERCICIO 4</h2>
                 <p>Crear una función filter que acepte un array y un callback y que:</p>
                 <ul>
-                    <li>•por cada elemento del array ejecute el callback pasándole dicho elemento como argumento</li>
-                    <li>•sí dicho callback devuelve true, pushea el elemento a un nuevo array</li>
-                    <li>•devuelva el array final con los elementos que pasaron el "filtro".</li>                    
+                    <li>por cada elemento del array ejecute el callback pasándole dicho elemento como argumento</li>
+                    <li>sí dicho callback devuelve true, pushea el elemento a un nuevo array</li>
+                    <li>devuelva el array final con los elementos que pasaron el "filtro".</li>                    
                 </ul>
             </a>
         </div>
@@ -100,103 +99,134 @@
         <div class="item9">
             <a href="">
                 <h2>EJERCICIO 9</h2>
-                <p></p>
+                <p>Crear una función dropWhile que acepte un array y un callback y que:</p>
+                <ul>
+                    <li>por cada elemento del array ejecute el callback pasándole dicho elemento como argumento</li>
+                    <li>devuelva un array con los elementos a partir del primer callback que devolvió false</li>
+                    <li>(Es decir, crea un nuevo array y va recorriendo elemento por elemento, mientras el callback de true, no los agrega, cuando el callback da false por primera vez agrega todos los elementos restantes a partir de dicho elemento inclusive)</p></li>
+                </ul>
             </a>
         </div>
         <div class="item10">
             <a href="">
                 <h2>EJERCICIO 10</h2>
-                <p></p>
+                <p>Crear una función takeWhile que acepte un array y un callback y que:</p>
+                <ul>
+                    <li>por cada elemento del array ejecute el callback pasándole dicho elemento como argumento</li>
+                    <li>devuelva un array con los elementos hasta el primer callback que devolvió false</li>
+                    <li>(Inverso del dropWhile)</li>
+                </ul>
             </a>
         </div>
         <div class="item11">
-            <a href="">
+            <a href="" >
                 <h2>EJERCICIO 11</h2>
-                <p></p>
+                <p>¿Cuál es el resultado del código a continuación?</p>
+                <br>
+                <div class="black">
+                    <p>let i=0;</p>
+                    <p>setTimeout(()=alert(i),100);</p>
+                    <p>for (let j =0 ; j < 10000000000 ; j++ ) </p>
+                    <p>i++;</p>
+                    <p> } </p>
+                </div>
             </a>
         </div>
         <div class="item12">
             <a href="">
                 <h2>EJERCICIO 12</h2>
-                <p></p>
+                <p>La función incorporada setTimeout utiliza callbacks. Crea una alternativa basada en promesas. sLa función delay(ms) debería devolver una promesa. Esa promesa debería resolverse después de ms milisegundos, para que podamos agregarle. then, así:</p>
+                <br>
+                <div class="black">
+                    <p>function delay (ms) { </p>
+                    <p>}</p>
+                    <p>delay(3000).then(()=> alert ("se ejecuta despues de 3 segundos"))</p>
+                </div>
             </a>
         </div>
         <div class="item13">
             <a href="">
                 <h2>EJERCICIO 13</h2>
-                <p></p>
+                <p>Crea una Promise que se resuelva después de 3 segundos y luego imprima "Promise resuelta" cuando se cumpla.</p>
             </a>
         </div>
         <div class="item14">
             <a href="">
                 <h2>EJERCICIO 14</h2>
-                <p></p>
+                <p>Define una función asincrónica que espere 1 segundo y luego devuelva una cadena que diga "Operación completada". Utiliza async/await.</p>
             </a>
         </div>
         <div class="item15">
             <a href="">
                 <h2>EJERCICIO 15</h2>
-                <p></p>
+                <p>Crea una Promise que se rechace después de 2 segundos y captura el error para imprimir "Error: Promise rechazada".</p>
             </a>
         </div>
         <div class="item16">
             <a href="">
                 <h2>EJERCICIO 16</h2>
-                <p></p>
+                <p>Crea tres Promises consecutivas, donde cada una se resuelva después de 1 segundo y devuelva un número diferente. Luego, encadena las tres Promises para sumar los resultados y mostrar el resultado final.</p>
             </a>
         </div>
         <div class="item17">
             <a href="">
                 <h2>EJERCICIO 17</h2>
-                <p></p>
+                <p>Crea tres Promises consecutivas, donde cada una se resuelva después de 1 segundo y devuelva un número diferente. Luego, encadena las tres Promises para sumar los resultados y mostrar el resultado final.</p>
             </a>
         </div>
         <div class="item18">
             <a href="">
                 <h2>EJERCICIO 18</h2>
-                <p></p>
+                <p>Después de realizar una llamada a un archivo local en formato json, utiliza el método then() para filtrar los datos y mostrar solo los elementos que cumplan ciertos criterios (por ejemplo, mostrar solo los nombres que comiencen con "A").</p>
             </a>
         </div>
         <div class="item19">
             <a href="">
                 <h2>EJERCICIO 19</h2>
-                <p></p>
+                <p>Crea una función asincrónica que realice una llamada a un archivo local en formato json y luego manipule los datos recibidos para mostrar información específica.</p>
             </a>
         </div>
         <div class="item20">
             <a href="">
                 <h2>EJERCICIO 20</h2>
-                <p></p>
+                <p>Crea tres Promises que se resuelvan después de diferentes intervalos de tiempo y luego utilice Promise.all() para mostrar un mensaje cuando todas se hayan resuelto.</p>
             </a>
         </div>
         <div class="item21">
             <a href="">
                 <h2>EJERCICIO 21</h2>
-                <p></p>
+                <p>Realiza tres Promises, algunas de las cuales se resuelvan y otras se rechacen. Utiliza Promise.allSettled() para obtener información sobre el estado de todas las Promises.</p>
             </a>
         </div>
         <div class="item22">
             <a href="">
                 <h2>EJERCICIO 22</h2>
-                <p></p>
+                <p>Crea un bucle que realice llamadas asincrónicas utilizando async/await para procesar una lista de elementos uno por uno.</p>
             </a>
         </div>
         <div class="item23">
             <a href="">
                 <h2>EJERCICIO 23</h2>
-                <p></p>
+                <p>Realiza una llamada a un archivo local en formato json y maneja posibles errores utilizando try/catch para mostrar un mensaje de error en caso de fallo.</p>
             </a>
         </div>
         <div class="item24">
             <a href="">
                 <h2>EJERCICIO 24</h2>
-                <p></p>
+                <p>Crear un objeto proxy usando la clase Proxy</p>
             </a>
         </div>
         <div class="item25">
             <a href="">
                 <h2>EJERCICIO 25</h2>
-                <p></p>
+                <p>Usar un proxy para la validación de los valores de propiedades</p>
+                <ul>
+                    <li>Cuando declaremos que el atributo es numérico solo perimimos que ingresen números</li>
+                    <li>Cuando declaremos que el atributo es alfanumérico solo permitimos que ingresen letras</li>
+                    <li>Cuando declaremos que el atributo es un email, solo permitimos que ingresen correos</li>
+                    <li>Cuando declaremos que el atributo es de tipo date, solo permitimos que ingresen fechas</li>
+                    <li>Para todos los atributos no se puede ingresar espacios en blanco tanto al inicio como al final de estos y se debe mostrar el error personalizado por consola</li>
+                </ul>
             </a>
         </div>
     </div>
