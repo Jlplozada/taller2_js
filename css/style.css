@@ -8,10 +8,13 @@
 .ejercicios{
     display: grid;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     text-align: center;
     text-decoration: none;
+    margin-left: 20%;
+    margin-right: 20%;
 }
+
 .black{
     font-weight: bold;
 }

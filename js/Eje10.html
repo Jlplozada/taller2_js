@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">Volver</a>
+    </div>
+    <script>
+        function takeWhile(array, callback) {
+            let result = [];
+            for (let i = 0; i < array.length; i++) {
+                if (!callback(array[i])) {
+                    break;
+                }
+                result.push(array[i]);
+            }
+            return result;
+        }
+        const numbers = [1, 2, 3, 4, 5, 6];
+        const callback = num => (num < 4);
+        const result = takeWhile(numbers, callback);
+        console.log(result);
+
+    </script>
+</body>
+</html>

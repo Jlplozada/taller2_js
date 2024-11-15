@@ -10,18 +10,16 @@
         <a href="../index.html">Volver</a>
     </div>
     <script>
-        function print(principio,final) {
-            let numero=principio;
-            const intervalo=setInterval(function(){
+        function imprimirNumerosTimeout(desde, hasta) {
+            let numero = desde;
+            setTimeout(function next() {
                 console.log(numero);
-                if (numero===final){
-                    clearInterval(intervalo);
+                if (numero < hasta) {
+                    setTimeout(next, 1000);
                 }
                 numero++;
-            },3000);
-        }
-        print(1,7);
-        
+            }, 1000);
+        }        
     </script>
 </body>
 </html>
