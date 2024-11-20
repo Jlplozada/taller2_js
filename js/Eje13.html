@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">Volver</a>
+    </div>
+    <script>
+        const promesa = new Promise((resolve) => {
+            setTimeout(() => resolve("Promise resuelta"), 3000);
+        });
+
+        promesa.then((mensaje) => console.log(mensaje)); // "Promise resuelta" después de 3 segundos
+
+    </script>
+</body>
+</html>

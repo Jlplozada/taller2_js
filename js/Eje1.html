@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">Volver</a>
+    </div>
+    <script>
+        function print(principio,final) {
+            let numero=principio;
+            const intervalo=setInterval(function(){
+                console.log(numero);
+                if (numero===final){
+                    clearInterval(intervalo);
+                }
+                numero++;
+            },3000);
+        }
+        print(1,7);
+        
+    </script>
+</body>
+</html>

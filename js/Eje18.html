@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">Volver</a>
+        
+    </div>
+    <script type="module" src="">
+        
+        const leer =async ()=>{
+            try {
+                return await fetch("./json18.json");
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        leer().then(data=>{
+            data.json().then(body=> {
+                const filtro = body.filter(item => item.body.startsWith("l"))
+                console.table(filtro);
+            });
+        }).then(body=>{
+            console.table(body);
+        })
+
+    </script>
+</body>
+</html>

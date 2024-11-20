@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">Volver</a>
+    </div>
+    <script>
+        const promesa1 = () => new Promise((resolve) => setTimeout(() => resolve(5), 1000));
+        const promesa2 = () => new Promise((resolve) => setTimeout(() => resolve(10), 1000));
+        const promesa3 = () => new Promise((resolve) => setTimeout(() => resolve(15), 1000));
+
+        promesa1().then((resultado1) => promesa2().then((resultado2) => promesa3().then((resultado3) => {
+            const suma = resultado1 + resultado2 + resultado3;
+            console.log("Resultado final:", suma); // 30
+         })));
+
+    </script>
+</body>
+</html>

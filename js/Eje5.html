@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">Volver</a>
+    </div>
+    <script>
+        function every(array, callback) {
+            for (let element of array) {
+                if (!callback(element)) {
+                        return false;
+                }
+            }
+                return true;
+        }   
+
+        const esPar = (num) => num % 2 === 0;
+        console.log(every([2, 4, 6], esPar)); // true
+        console.log(every([2, 3, 6], esPar)); // false
+
+    </script>
+</body>
+</html>
