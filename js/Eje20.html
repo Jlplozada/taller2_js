@@ -10,7 +10,14 @@
         <a href="../index.html">Volver</a>
     </div>
     <script>
-        
+        const promesaA = new Promise((resolve) => setTimeout(() => resolve("A"), 1000));
+        const promesaB = new Promise((resolve) => setTimeout(() => resolve("B"), 2000));
+        const promesaC = new Promise((resolve) => setTimeout(() => resolve("C"), 3000));
+
+        Promise.all([promesaA, promesaB, promesaC]).then((resultados) => {
+            console.log("Todas las promesas resueltas:", resultados);
+        });
+
     </script>
 </body>
 </html>

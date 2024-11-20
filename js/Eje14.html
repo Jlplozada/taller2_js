@@ -10,7 +10,13 @@
         <a href="../index.html">Volver</a>
     </div>
     <script>
-        
+        async function operacion() {
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+            return "Operación completada";
+        }
+
+        operacion().then((resultado) => console.log(resultado)); 
+
     </script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+{
+    "data": [
+        { "nombre": "Laura", 
+        "edad": 28, 
+        "ocupacion": "Programadora" 
+        },
+        { "nombre": "Pedro",
+         "edad": 32, 
+         "ocupacion": "Carpintero" 
+        },
+        { "nombre": "Sofía",
+         "edad": 24,
+          "ocupacion": "Estudiante" 
+        }
+    ]
+}

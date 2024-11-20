@@ -10,7 +10,21 @@
         <a href="../index.html">Volver</a>
     </div>
     <script>
-        
+        function dropWhile(array, callback) {
+            let result = [];
+            let dropping = true;
+            for (let element of array) {
+                if (dropping && !callback(element)) {
+                    dropping = false;
+                }
+                if (!dropping) {
+                    result.push(element);
+                }
+            }
+            return result;
+        }
+        const esMenorA10 = (num) => num < 10;
+        console.log(dropWhile([1, 3, 5, 10, 12], esMenorA10));
     </script>
 </body>
 </html>

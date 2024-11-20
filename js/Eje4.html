@@ -10,14 +10,12 @@
         <a href="../index.html">Volver</a>
     </div>
     <script>
-        const array = [1, 3, 5, 7, 9, 13, 14, 16, 19, 21];
-        let valor = prompt("Ingrese un número para filtrar los números mayores (Del 1 al 21)");
-        while (valor < 1 || valor > 21) {
-            valor = prompt("Número fuera de rango. Por favor, ingrese un número entre 1 y 21");
-        }
-        const arrayFiltrado = array.filter(num => num > Number(valor));
-        alert("Se filtró el array: " + arrayFiltrado);
-s
+        let array =[10,3,9,10];
+        const resultado =array.filter(num=>{
+            return num %2 ===0;
+        })
+        console.log(resultado);
+        
     </script>
 </body>
 </html>

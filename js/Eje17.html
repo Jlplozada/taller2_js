@@ -10,7 +10,25 @@
         <a href="../index.html">Volver</a>
     </div>
     <script>
-        
+        async function obtenerDatos() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) {
+                    throw new Error('No se pudo obtener el archivo JSON');
+                }
+                const data = await response.json();
+                console.log(`Total de personas: ${data.data.length}`);
+                data.data.forEach((persona) => {
+                    console.log(`Nombre: ${persona.nombre}`);
+                    console.log(`Edad: ${persona.edad}`);
+                    console.log(`Ocupación: ${persona.ocupacion}`);
+                });
+            } catch (error) {
+                console.error("Error:", error.message);
+            }
+        }
+        obtenerDatos();
+
     </script>
 </body>
 </html>

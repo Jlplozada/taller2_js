@@ -10,7 +10,14 @@
         <a href="../index.html">Volver</a>
     </div>
     <script>
-        
+        const promesaX = new Promise((resolve) => setTimeout(() => resolve("X"), 1000));
+        const promesaY = new Promise((_, reject) => setTimeout(() => reject("Error en Y"), 2000));
+        const promesaZ = new Promise((resolve) => setTimeout(() => resolve("Z"), 3000));
+
+        Promise.allSettled([promesaX, promesaY, promesaZ]).then((resultados) => {
+            console.log("Resultados de todas las promesas:", resultados);
+        });
+
     </script>
 </body>
 </html>

@@ -10,7 +10,16 @@
         <a href="../index.html">Volver</a>
     </div>
     <script>
-        
+        async function procesarLista(lista) {
+            for (const elemento of lista) {
+                await new Promise((resolve) => setTimeout(resolve, 1000));
+                console.log("Procesando:", elemento);
+            }
+        }
+
+        const elementos = [1, 2, 3, 4];
+        procesarLista(elementos);
+
     </script>
 </body>
 </html>
